@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Point Tech Marsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🖥️ Point Tech Marsa</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="shop.html" class="active">Boutique</a>
+                <a href="cart.html" class="cart-link">
+                    🛒 Panier <span id="cart-count" class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <div class="container">
+            <h2>Notre Boutique</h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <input type="text" id="search" class="search-box" placeholder="Rechercher des produits...">
+                <select id="categoryFilter" class="filter-select">
+                    <option value="">Toutes les catégories</option>
+                    <option value="ordinateurs">Ordinateurs</option>
+                    <option value="peripheriques">Périphériques</option>
+                    <option value="imprimantes">Imprimantes</option>
+                    <option value="accessoires">Accessoires</option>
+                </select>
+                <select id="sortFilter" class="filter-select">
+                    <option value="popular">Populaires</option>
+                    <option value="price-low">Prix: Bas au Haut</option>
+                    <option value="price-high">Prix: Haut au Bas</option>
+                </select>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="products-container" class="products-grid">
+                <!-- Les produits seront chargés ici par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Point Tech Marsa est votre partenaire de confiance pour tous vos besoins informatiques.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📞 +216 XX XXX XXX</p>
+                    <p>📧 contact@pointtechmarsa.tn</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Localisation</h4>
+                    <p>Marsa, Tunisie</p>
+                    <p>Monnaie: DT (Dinar Tunisien)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Point Tech Marsa. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
